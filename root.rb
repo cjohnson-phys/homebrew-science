@@ -20,7 +20,7 @@ class Root < Formula
   depends_on "fftw" => :optional
   depends_on "qt" => [:optional, "with-qt3support"]
   depends_on :x11 => :optional
-  depends_on :python if MacOS.version <= :snow_leopard
+  depends_on :python
 
   def install
     # brew audit doesn't like non-executables in bin
